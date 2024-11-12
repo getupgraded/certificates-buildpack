@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Update package lists
+apt-get update
+
+# Install or update ca-certificates
+apt-get install -y --no-install-recommends ca-certificates
+
+# Clean up
+apt-get clean
+rm -rf /var/lib/apt/lists/*
